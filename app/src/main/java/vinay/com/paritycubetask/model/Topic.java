@@ -1,216 +1,142 @@
 package vinay.com.paritycubetask.model;
 
+public class Topic
+{
+    private String id;
 
-public class Topic {
-
-    private Integer id;
-    private Boolean fpdFlag;
     private String title;
-    private Integer viewCount;
-    private Integer postsCount;
-    private Integer lastActivityAt;
-    private Integer score;
-    private String forumName;
-    private String shareUrl;
-    private Integer frontPageSuggestionsCount;
-    private String updatedAt;
 
-    /**
-     *
-     * @return
-     * The id
-     */
-    public Integer getId() {
+    private String updated_at;
+
+    private String last_activity_at;
+
+    private String share_url;
+
+    private String forum_name;
+
+    private String posts_count;
+
+    private String score;
+
+    private String fpd_flag;
+
+    private String view_count;
+
+    private String front_page_suggestions_count;
+
+    public String getId ()
+    {
         return id;
     }
 
-    /**
-     *
-     * @param id
-     * The id
-     */
-    public void setId(Integer id) {
+    public void setId (String id)
+    {
         this.id = id;
     }
 
-    /**
-     *
-     * @return
-     * The fpdFlag
-     */
-    public Boolean getFpdFlag() {
-        return fpdFlag;
-    }
-
-    /**
-     *
-     * @param fpdFlag
-     * The fpd_flag
-     */
-    public void setFpdFlag(Boolean fpdFlag) {
-        this.fpdFlag = fpdFlag;
-    }
-
-    /**
-     *
-     * @return
-     * The title
-     */
-    public String getTitle() {
+    public String getTitle ()
+    {
         return title;
     }
 
-    /**
-     *
-     * @param title
-     * The title
-     */
-    public void setTitle(String title) {
+    public void setTitle (String title)
+    {
         this.title = title;
     }
 
-    /**
-     *
-     * @return
-     * The viewCount
-     */
-    public Integer getViewCount() {
-        return viewCount;
+    public String getUpdated_at ()
+    {
+        return updated_at;
     }
 
-    /**
-     *
-     * @param viewCount
-     * The view_count
-     */
-    public void setViewCount(Integer viewCount) {
-        this.viewCount = viewCount;
+    public void setUpdated_at (String updated_at)
+    {
+        this.updated_at = updated_at;
     }
 
-    /**
-     *
-     * @return
-     * The postsCount
-     */
-    public Integer getPostsCount() {
-        return postsCount;
+    public String getLast_activity_at ()
+    {
+        return last_activity_at;
     }
 
-    /**
-     *
-     * @param postsCount
-     * The posts_count
-     */
-    public void setPostsCount(Integer postsCount) {
-        this.postsCount = postsCount;
+    public void setLast_activity_at (String last_activity_at)
+    {
+        this.last_activity_at = last_activity_at;
     }
 
-    /**
-     *
-     * @return
-     * The lastActivityAt
-     */
-    public Integer getLastActivityAt() {
-        return lastActivityAt;
+    public String getShare_url ()
+    {
+        return share_url;
     }
 
-    /**
-     *
-     * @param lastActivityAt
-     * The last_activity_at
-     */
-    public void setLastActivityAt(Integer lastActivityAt) {
-        this.lastActivityAt = lastActivityAt;
+    public void setShare_url (String share_url)
+    {
+        this.share_url = share_url;
     }
 
-    /**
-     *
-     * @return
-     * The score
-     */
-    public Integer getScore() {
+    public String getForum_name ()
+    {
+        return forum_name;
+    }
+
+    public void setForum_name (String forum_name)
+    {
+        this.forum_name = forum_name;
+    }
+
+    public String getPosts_count ()
+    {
+        return posts_count;
+    }
+
+    public void setPosts_count (String posts_count)
+    {
+        this.posts_count = posts_count;
+    }
+
+    public String getScore ()
+    {
         return score;
     }
 
-    /**
-     *
-     * @param score
-     * The score
-     */
-    public void setScore(Integer score) {
+    public void setScore (String score)
+    {
         this.score = score;
     }
 
-    /**
-     *
-     * @return
-     * The forumName
-     */
-    public String getForumName() {
-        return forumName;
+    public String getFpd_flag ()
+    {
+        return fpd_flag;
     }
 
-    /**
-     *
-     * @param forumName
-     * The forum_name
-     */
-    public void setForumName(String forumName) {
-        this.forumName = forumName;
+    public void setFpd_flag (String fpd_flag)
+    {
+        this.fpd_flag = fpd_flag;
     }
 
-    /**
-     *
-     * @return
-     * The shareUrl
-     */
-    public String getShareUrl() {
-        return shareUrl;
+    public String getView_count ()
+    {
+        return view_count;
     }
 
-    /**
-     *
-     * @param shareUrl
-     * The share_url
-     */
-    public void setShareUrl(String shareUrl) {
-        this.shareUrl = shareUrl;
+    public void setView_count (String view_count)
+    {
+        this.view_count = view_count;
     }
 
-    /**
-     *
-     * @return
-     * The frontPageSuggestionsCount
-     */
-    public Integer getFrontPageSuggestionsCount() {
-        return frontPageSuggestionsCount;
+    public String getFront_page_suggestions_count ()
+    {
+        return front_page_suggestions_count;
     }
 
-    /**
-     *
-     * @param frontPageSuggestionsCount
-     * The front_page_suggestions_count
-     */
-    public void setFrontPageSuggestionsCount(Integer frontPageSuggestionsCount) {
-        this.frontPageSuggestionsCount = frontPageSuggestionsCount;
+    public void setFront_page_suggestions_count (String front_page_suggestions_count)
+    {
+        this.front_page_suggestions_count = front_page_suggestions_count;
     }
 
-    /**
-     *
-     * @return
-     * The updatedAt
-     */
-    public String getUpdatedAt() {
-        return updatedAt;
+    @Override
+    public String toString()
+    {
+        return "ClassPojo [id = "+id+", title = "+title+", updated_at = "+updated_at+", last_activity_at = "+last_activity_at+", share_url = "+share_url+", forum_name = "+forum_name+", posts_count = "+posts_count+", score = "+score+", fpd_flag = "+fpd_flag+", view_count = "+view_count+", front_page_suggestions_count = "+front_page_suggestions_count+"]";
     }
-
-    /**
-     *
-     * @param updatedAt
-     * The updated_at
-     */
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
 }

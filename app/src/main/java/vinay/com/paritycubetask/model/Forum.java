@@ -1,140 +1,94 @@
 package vinay.com.paritycubetask.model;
 
+public class Forum
+{
+    private String id;
 
-public class Forum {
-
-    private Integer id;
     private String title;
-    private String description;
-    private Integer topicsCount;
-    private Integer postsCount;
-    private Integer lastActivityAt;
-    private Boolean haveSubforum;
 
-    /**
-     *
-     * @return
-     * The id
-     */
-    public Integer getId() {
+    private String last_activity_at;
+
+    private String have_subforum;
+
+    private String description;
+
+    private String posts_count;
+
+    private String topics_count;
+
+    public String getId ()
+    {
         return id;
     }
 
-    /**
-     *
-     * @param id
-     * The id
-     */
-    public void setId(Integer id) {
+    public void setId (String id)
+    {
         this.id = id;
     }
 
-    /**
-     *
-     * @return
-     * The title
-     */
-    public String getTitle() {
+    public String getTitle ()
+    {
         return title;
     }
 
-    /**
-     *
-     * @param title
-     * The title
-     */
-    public void setTitle(String title) {
+    public void setTitle (String title)
+    {
         this.title = title;
     }
 
-    /**
-     *
-     * @return
-     * The description
-     */
-    public String getDescription() {
+    public String getLast_activity_at ()
+    {
+        return last_activity_at;
+    }
+
+    public void setLast_activity_at (String last_activity_at)
+    {
+        this.last_activity_at = last_activity_at;
+    }
+
+    public String getHave_subforum ()
+    {
+        return have_subforum;
+    }
+
+    public void setHave_subforum (String have_subforum)
+    {
+        this.have_subforum = have_subforum;
+    }
+
+    public String getDescription ()
+    {
         return description;
     }
 
-    /**
-     *
-     * @param description
-     * The description
-     */
-    public void setDescription(String description) {
+    public void setDescription (String description)
+    {
         this.description = description;
     }
 
-    /**
-     *
-     * @return
-     * The topicsCount
-     */
-    public Integer getTopicsCount() {
-        return topicsCount;
+    public String getPosts_count ()
+    {
+        return posts_count;
     }
 
-    /**
-     *
-     * @param topicsCount
-     * The topics_count
-     */
-    public void setTopicsCount(Integer topicsCount) {
-        this.topicsCount = topicsCount;
+    public void setPosts_count (String posts_count)
+    {
+        this.posts_count = posts_count;
     }
 
-    /**
-     *
-     * @return
-     * The postsCount
-     */
-    public Integer getPostsCount() {
-        return postsCount;
+    public String getTopics_count ()
+    {
+        return topics_count;
     }
 
-    /**
-     *
-     * @param postsCount
-     * The posts_count
-     */
-    public void setPostsCount(Integer postsCount) {
-        this.postsCount = postsCount;
+    public void setTopics_count (String topics_count)
+    {
+        this.topics_count = topics_count;
     }
 
-    /**
-     *
-     * @return
-     * The lastActivityAt
-     */
-    public Integer getLastActivityAt() {
-        return lastActivityAt;
+    @Override
+    public String toString()
+    {
+        return "ClassPojo [id = "+id+", title = "+title+", last_activity_at = "+last_activity_at+", have_subforum = "+have_subforum+", description = "+description+", posts_count = "+posts_count+", topics_count = "+topics_count+"]";
     }
-
-    /**
-     *
-     * @param lastActivityAt
-     * The last_activity_at
-     */
-    public void setLastActivityAt(Integer lastActivityAt) {
-        this.lastActivityAt = lastActivityAt;
-    }
-
-    /**
-     *
-     * @return
-     * The haveSubforum
-     */
-    public Boolean getHaveSubforum() {
-        return haveSubforum;
-    }
-
-    /**
-     *
-     * @param haveSubforum
-     * The have_subforum
-     */
-    public void setHaveSubforum(Boolean haveSubforum) {
-        this.haveSubforum = haveSubforum;
-    }
-
 }

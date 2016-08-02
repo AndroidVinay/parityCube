@@ -1,47 +1,34 @@
 package vinay.com.paritycubetask.model;
 
-import java.util.ArrayList;
-import java.util.List;
+public class RecentPostModel
+{
+    private Data[] data;
 
-public class RecentPostModel {
+    private String total_count;
 
-    private Integer totalCount;
-    private List<Datum> data = new ArrayList<Datum>();
-
-    /**
-     *
-     * @return
-     * The totalCount
-     */
-    public Integer getTotalCount() {
-        return totalCount;
-    }
-
-    /**
-     *
-     * @param totalCount
-     * The total_count
-     */
-    public void setTotalCount(Integer totalCount) {
-        this.totalCount = totalCount;
-    }
-
-    /**
-     *
-     * @return
-     * The data
-     */
-    public List<Datum> getData() {
+    public Data[] getData ()
+    {
         return data;
     }
 
-    /**
-     *
-     * @param data
-     * The data
-     */
-    public void setData(List<Datum> data) {
+    public void setData (Data[] data)
+    {
         this.data = data;
     }
 
+    public String getTotal_count ()
+    {
+        return total_count;
+    }
+
+    public void setTotal_count (String total_count)
+    {
+        this.total_count = total_count;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "ClassPojo [data = "+data+", total_count = "+total_count+"]";
+    }
 }
